@@ -1,0 +1,54 @@
+<html>
+<head>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <title>Pixel Art Maker!</title>
+    <link rel="stylesheet"      href="https://fonts.googleapis.com/css? family=Monoton">
+    <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="mymenu ">
+  <a class="dropdown2">About</>
+  <div class=dropdownContent2>
+  <p>This is a project for Google Developer Challenge Scholarship. I hope you enjoy it. Thank you Google and Udacity for this opportunity.</p>
+  </div>
+  <a class="dropdown3">Directions</>
+  <div class="dropdownContent3">
+    <p> <ol>
+  <li>Insert the values of height and width and press "Submit".</li>
+  <li>Then pick a color and start your design.</li>
+  <li> Click at the squares to full then with color.
+</li>
+    <li>P.S.You can shift to another color whenever you want and click on "Clear All" to erase your design.
+</li>
+  <li>HAVE FUN !!!
+</li>
+  </ol>
+  </p>
+  </div>
+  <a class="dropdown4">Contact</>
+    <div class="dropdownContent4">
+    <p>https://eu.udacity.com/</p>
+    </div>
+ </div>
+  
+     <h1> Pixel Art Maker</h1>
+
+    <h2>Choose Grid Size</h2>
+    <form id="sizePicker">
+        Grid Height:
+        <input type="number" id="input_height" name="height" min="1" value="1">
+        Grid Width:
+        <input type="number" id="input_width" name="width" min="1" value="1">
+        <input type="submit">
+        <button id='clear'>Clear All</button>
+    </form>
+    <h2>Pick A Color</h2>
+    <div class="input-color-container">
+      <input   id="colorPicker" value="#81D8D0" class="input-color" type="color">
+</div>
+    <h2>Design Canvas</h2>
+    <table id="pixel_canvas"></table>
+    <script src="app.js"></script>
+</body>
+</html>
